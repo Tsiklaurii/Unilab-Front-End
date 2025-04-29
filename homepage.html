@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/content.css">
 </head>
 
 <body>
@@ -14,10 +15,10 @@
 
     <section class="main">
         <div class="info">
-            <div>
+            <div class="mobile">
                 <div class="titles">
                     <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1><br>
-                    <p>Browse through our diverse range of meticulously crafted garments, designed <br> to bring out
+                    <p>Browse through our diverse range of meticulously crafted garments, designed to bring out
                         your individuality and cater to your sense of style.</p>
                 </div>
                 <button class="shop-now">Shop Now</button>
@@ -31,7 +32,7 @@
                         <h1>2,000+</h1>
                         <p>High-Quality Products</p>
                     </div>
-                    <div class="divider"></div>
+                    <div class="divider2"></div>
                     <div>
                         <h1>30,000+</h1>
                         <p>Happy Customers</p>
@@ -40,6 +41,7 @@
             </div>
         </div>
         <div class="logos">
+            <img src="images/mobile-cover-photo.png" alt="mobile-cover-photo.png" class="mobile-cover-photo">
             <img src="images/small-star.png" alt="star 1" class="star1">
             <img src="images/big-star.png" alt="star 2" class="star2">
         </div>
@@ -55,10 +57,30 @@
 
     <section class="new-arrivals">
         <h1>NEW ARRIVALS</h1>
+        <div id="new-arrivals-container"></div>
+        <button id="new-arrivals-view-all-button" class="new-arrivals-view-all-button">View All</button>
     </section>
-    <div class="divider2"></div>
+
+    <div class="divider3"></div>
+
     <section class="top-selling">
         <h1>TOP SELLING</h1>
+        <div id="top-selling-container"></div>
+        <button id="top-selling-view-all-button" class="top-selling-view-all-button">View All</button>
+    </section>
+
+    <section class="browse-by-dress">
+        <h1>BROWSE BY DRESS STYLE</h1>
+        <div class="browse-by-dress-container-imgs">
+            <div><img src="images/browse-by-dress-style/casual.png" alt="casual"></div>
+            <div><img src="images/browse-by-dress-style/formal.png" alt="formal"></div>
+            <div><img src="images/browse-by-dress-style/party.png" alt="party"></div>
+            <div><img src="images/browse-by-dress-style/gym.png" alt="gym"></div>
+        </div>
+    </section>
+
+    <section class="top-selling">
+        <h1>OUR HAPPY CUSTOMERS</h1>
     </section>
 
     <div id="footer"></div>

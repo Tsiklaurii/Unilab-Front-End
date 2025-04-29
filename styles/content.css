@@ -1,0 +1,181 @@
+.new-arrivals,
+.top-selling {
+    text-align: center;
+    margin-top: 72px;
+}
+
+.browse-by-dress {
+    text-align: center;
+}
+
+.new-arrivals h1,
+.top-selling h1,
+.browse-by-dress h1 {
+    font-size: 48px;
+    line-height: 100%;
+    margin-bottom: 55px;
+}
+
+.divider3 {
+    width: 1124px;
+    height: 1px;
+    background-color: black;
+    opacity: 10%;
+    margin: auto;
+}
+
+#new-arrivals-container,
+#top-selling-container {
+    font-family: 'Satoshi Variable';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1240px;
+    margin: auto;
+}
+
+.new-arrivals-item,
+.top-selling-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 408px;
+    width: 295px;
+}
+
+.new-arrivals-item-info,
+.top-selling-item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 94px;
+    margin-top: 16px;
+}
+
+.product-image {
+    width: 100%;
+    height: 298px;
+    border-radius: 20px;
+    background-color: #F0EEED;
+}
+
+.ranking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.new-arrivals-item-info h4,
+.top-selling-item-info h4 {
+    font-size: 20px;
+}
+
+.new-arrivals-item-info h3,
+.top-selling-item-info h3 {
+    font-size: 24px;
+}
+
+.new-arrivals-view-all-button,
+.top-selling-view-all-button {
+    margin: 36px auto 64px auto;
+    border-radius: 62px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    padding: 16px 54px 16px 54px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.new-arrivals-view-all-button:hover,
+.top-selling-view-all-button:hover {
+    background-color: #F0EEED;
+}
+
+.browse-by-dress {
+    margin: auto;
+    width: 1239px;
+    height: 866px;
+    border-radius: 40px;
+    background-color: #F0F0F0;
+    padding: 70px 64px 76px 64px;
+}
+
+.browse-by-dress-container-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 390px) {
+
+    .new-arrivals h1,
+    .top-selling h1 {
+        font-size: 32px;
+        margin-top: 50px;
+        margin-bottom: 32px;
+    }
+
+    #new-arrivals-container,
+    #top-selling-container {
+        width: auto;
+    }
+
+    .new-arrivals-item,
+    .top-selling-item {
+        display: none;
+    }
+
+    .new-arrivals-item:nth-child(1),
+    .top-selling-item:nth-child(1) {
+        display: block;
+        margin: auto;
+    }
+
+    .new-arrivals-item-info h4,
+    .top-selling-item-info h4 {
+        font-size: 16px;
+    }
+
+    .new-arrivals-item-info h3,
+    .top-selling-item-info h3 {
+        font-size: 20px;
+    }
+
+    .divider3 {
+        width: 358px;
+    }
+
+    .browse-by-dress {
+        margin: auto;
+        width: 358px;
+        height: 975px;
+        padding: 40px 24px 40px 24px;
+    }
+
+    .browse-by-dress h1 {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+
+    .browse-by-dress-container-imgs {
+        gap: 16px;
+    }
+
+    .browse-by-dress-container-imgs div {
+        width: 310px;
+        height: 190px;
+    }
+
+    .browse-by-dress-container-imgs div img {
+        height: 100%;
+        width: 100%;
+
+    }
+}

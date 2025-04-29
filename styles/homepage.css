@@ -16,6 +16,11 @@
     src: url('../fonts/Satoshi-Variable.ttf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.ttf') format('opentype');
+}
+
 body {
     font-family: 'Integral CF Bold';
 }
@@ -50,6 +55,7 @@ body {
 .titles h1 {
     font-size: 64px;
     line-height: 64px;
+    font-weight: 700;
 }
 
 .info p {
@@ -87,7 +93,8 @@ body {
     opacity: 60%;
 }
 
-.divider {
+.divider,
+.divider2 {
     width: 1px;
     height: 100%;
     background-color: black;
@@ -150,22 +157,116 @@ body {
     animation-delay: calc(30s / 5 * (5 - 5) * -1);
 }
 
-.new-arrivals,
-.top-selling {
-    margin-top: 80px;
-    text-align: center;
+.mobile-cover-photo {
+    display: none;
 }
 
-.new-arrivals h1,
-.top-selling h1 {
-    font-size: 48px;
-    line-height: 100%;
-}
+@media (max-width: 390px) {
+    .titles h1 {
+        font-size: 36px;
+        line-height: 34px;
+    }
 
-.divider2 {
-    width: 1124px;
-    height: 1px;
-    background-color: black;
-    opacity: 10%;
-    margin: auto;
+    .main {
+        position: relative;
+        background-image: url("../images/mobile-cover.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 853px;
+        display: block;
+    }
+
+    .info {
+        height: 405px;
+    }
+
+    .info,
+    .logos {
+        height: 50%;
+        width: 390px;
+    }
+
+    .mobile {
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titles {
+        width: 90%;
+    }
+
+    .info p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .shop-now {
+        width: 358px;
+    }
+
+    .logos {
+        position: relative;
+    }
+
+    .quantity-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 278px;
+        z-index: 4;
+    }
+
+    .quantity-info>div:nth-child(5) {
+        margin-top: 5px;
+    }
+
+    .quantity-info h1 {
+        font-size: 24px;
+    }
+
+    .divider {
+        height: 52px;
+    }
+
+    .divider2 {
+        display: none;
+    }
+
+    .quantity-info p {
+        font-size: 12px;
+        opacity: 60%;
+    }
+
+    .mobile-cover-photo {
+        display: flex;
+        z-index: 2;
+    }
+
+    .star1,
+    .star2 {
+        z-index: 3;
+    }
+
+    .wrapper {
+        height: 146px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 25px 15px 0px 15px;
+    }
+
+    .item {
+        animation: none;
+        position: static;
+        transform: none;
+        height: 40px;
+    }
+    .item img {
+        height: 25px; /* or whatever smaller size you want */
+        width: auto;
+    }
 }

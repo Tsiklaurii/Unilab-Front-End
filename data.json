@@ -1,0 +1,58 @@
+[
+    {
+        "name": "T-shirt with Tape Details",
+        "image": "https://beyondthenoiseeg.com/wp-content/uploads/2024/09/Product-1.png",
+        "price": "120",
+        "ranking": "4",
+        "id": "1"
+    },
+    {
+        "name": "Skiny Fit Jeans",
+        "image": "https://dfcdn.defacto.com.tr/2/W7650AZ_22SP_NM28_06_01.jpg",
+        "price": "240",
+        "ranking": "3",
+        "id": "2"
+    },
+    {
+        "name": "Checkered Shirt",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHjjvvcExPnI9N7tKm3862rpsA90eEKoEKkygwClOTFWyL9ASI",
+        "price": "180",
+        "ranking": "3",
+        "id": "3"
+    },
+    {
+        "name": "Sleeve Striped T-shirt",
+        "image": "https://elegantsparkling.com/wp-content/uploads/2024/10/image-10.webp",
+        "price": "130",
+        "ranking": "4",
+        "id": "4"
+    },
+    {
+        "name": "Vertical Striped Shirt",
+        "image": "https://shop-co-demo.vercel.app/_next/image?url=/_next/static/media/1.b89d8bd3.png&w=640&q=75",
+        "price": "212",
+        "ranking": "5",
+        "id": "5"
+    },
+    {
+        "name": "Courage Graphic T-shirt",
+        "image": "https://e-commerce.alkanaziz.com/images/products/product-6.png",
+        "price": "145",
+        "ranking": "5.4",
+        "id": "6"
+    },
+    {
+        "name": "Loose Fit Bermuda Shorts",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyCR5PvAli3lA3JNVSkuKOPi04emKzDDeed-QCFt3EaHGngh6i",
+        "price": "80",
+        "ranking": "4",
+        "id": "7"
+    },
+    {
+        "name": "Faded Skinny Jeans",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU0P-2HJaSkLOAMH7wYrFAOtDR8y1Q5HlMizN9Jqw4SgZ_DjK9",
+        "price": "210",
+        "ranking": "3.5",
+        "id": "8"
+    }
+]
