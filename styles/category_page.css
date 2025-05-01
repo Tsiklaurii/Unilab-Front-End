@@ -1,0 +1,141 @@
+.category-page-content {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 24px 100px 0px 100px;
+}
+
+.menu-path {
+    font-family: "Satoshi Variable";
+    margin: 24px 0px 24px 0px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.content-div {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Satoshi Variable";
+}
+
+.filters {
+    width: 295px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px 24px 20px 24px;
+}
+
+.filters h3 {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters img {
+    cursor: pointer;
+    height: 18.75px;
+}
+
+.filters-divider {
+    width: 247px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: rotate(0deg);
+    display: inline-block;
+    margin: 24px 0px;
+}
+
+.categories p,
+.dress-style-categories p {
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.categories {
+    width: 247px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.dress-style-categories {
+    margin-top: 20px;
+}
+
+.casual {
+    border: 1px solid black;
+}
+
+.price .adjust-price {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.adjust-price-dollar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 35px;
+}
+
+.colors-first-row img,
+.colors-second-row img {
+    width: 37px;
+    height: 37px;
+}
+
+.colors-first-row,
+.colors-second-row {
+    width: 247px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colors-first-row {
+    margin: 20px 0px;
+}
+
+.size {
+    display: flex;
+    flex-wrap: wrap;
+    width: 247px;
+    height: 227px;
+    gap: 8px;
+    margin: 20px 0px;
+}
+
+.size div {
+    border-radius: 62px;
+    padding: 10px 20px;
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+
+.size .large {
+    background-color: black;
+    color: white;
+}
+
+.apply-filter-btn {
+    display: block;
+    margin: 24px auto 29px auto;
+    cursor: pointer;
+    height: 48px;
+    border-radius: 62px;
+    padding: 16px 54px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.apply-filter-btn:active {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 390px) {
+    .category_divider {
+        width: 358px;
+    }
+}

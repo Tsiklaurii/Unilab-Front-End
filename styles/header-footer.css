@@ -23,15 +23,14 @@
     cursor: pointer;
 }
 
-nav {
-    margin: 25px auto 25px auto;
+.nav-inner {
+    margin: 25px 100px 25px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
 }
 
-nav a {
+.nav-inner a {
     text-decoration: none;
     color: black;
 }
@@ -280,24 +279,25 @@ footer {
         font-size: 12px;
     }
 
-    nav {
+    .nav-inner {
         margin: 10px auto 10px auto;
         width: 100%;
         justify-content: flex-start;
     }
 
-    nav .menu {
+    .nav-inner .menu {
         display: none;
     }
 
-    nav .drop-down-menu {
+    .drop-down-menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 90px;
+        top: 89px;
+        left: 0px;
         z-index: 5;
         background-color: white;
-        padding: 20px;
+        padding: 24px 120px 24px 24px;
         gap: 32px;
         font-family: 'Poppins';
         cursor: pointer;
@@ -319,11 +319,11 @@ footer {
 
     .burger {
         display: flex;
-        padding-left: 20px;
+        padding-left: 16px;
         margin-right: 16px;
     }
 
-    nav .search-bar {
+    .nav-inner .search-bar {
         display: none;
     }
 
@@ -421,5 +421,10 @@ footer {
         flex-direction: column;
         padding: 20px;
         gap: 30px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
