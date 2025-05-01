@@ -113,6 +113,76 @@
     cursor: pointer;
 }
 
+.happy-customers {
+    margin-top: 80px;
+}
+
+.happy-customers h1 {
+    font-size: 48px;
+    line-height: 100%;
+    width: 1239px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* swiper */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+.swiper {
+    /* width: 100%; */
+    width: 1239px;
+    margin: 0px auto 80px auto;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 240px !important;
+    border-radius: 20px;
+    padding: 28px 32px;
+    box-sizing: border-box;
+}
+
+.swiper-wrapper {
+    font-family: 'Satoshi Variable';
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-nav-buttons {
+    display: flex !important;
+    align-items: flex-end;
+}
+
+.nav-buttons {
+    display: flex !important;
+    gap: 16px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: static !important;
+}
+
+.swiper-slide h3 {
+    display: flex;
+    gap: 4px;
+    font-size: 20px;
+    margin: 15px 0px 12px 0px;
+}
+
+.swiper-slide p {
+    font-size: 16px;
+}
+
 @media (max-width: 390px) {
 
     .new-arrivals h1,
@@ -153,7 +223,6 @@
     }
 
     .browse-by-dress {
-        margin: auto;
         width: 358px;
         height: 975px;
         padding: 40px 24px 40px 24px;
@@ -176,6 +245,27 @@
     .browse-by-dress-container-imgs div img {
         height: 100%;
         width: 100%;
+    }
 
+    .happy-customers h1 {
+        font-size: 32px;
+        width: 286px;
+        margin-bottom: 24px;
+    }
+
+    .swiper {
+        width: 360px;
+        margin: 0px auto 50px auto;
+    }
+
+    .swiper-slide {
+        width: 358px !important;
+        height: 186px;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+
+    .swiper-wrapper {
+        margin: auto;
     }
 }

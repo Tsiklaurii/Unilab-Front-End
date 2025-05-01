@@ -27,6 +27,8 @@ function loadContent(id, file) {
 loadContent("header", "header.html");
 loadContent("footer", "footer.html");
 
+
+// Top Selling, New Arrivals
 fetch("https://680fc19727f2fdac240f48af.mockapi.io/items")
     .then((res) => res.json())
     .then((items) => {
@@ -58,6 +60,44 @@ fetch("https://680fc19727f2fdac240f48af.mockapi.io/items")
                     <h3>$${item.price}</h3>
                 </div>
             </div>`;
+        });
+    })
+    .catch((error) => {
+        console.log(error, "შეცდომა");
+    });
+
+
+// Review swiper slides
+fetch('https://680fc19727f2fdac240f48af.mockapi.io/feedback') 
+    .then(res => res.json())
+    .then(reviews => {
+        const wrapper = document.querySelector('.swiper-wrapper');
+
+        reviews.forEach(review => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide';
+
+            slide.innerHTML = `
+            <img src="images/review-stars.png" alt="review-stars">
+            <h3>${review.name}<img src="images/check.png" alt="check"></h3>
+            <p>${review.review}</p>
+            `;
+            wrapper.appendChild(slide);
+        });
+
+        new Swiper('.swiper', {
+            direction: 'horizontal',
+            slidesPerView: 3,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            spaceBetween: 20,
+            breakpoints: {
+                0: { slidesPerView: 'auto' },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
         });
     })
     .catch((error) => {

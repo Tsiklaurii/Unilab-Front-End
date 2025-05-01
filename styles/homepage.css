@@ -246,8 +246,16 @@ body {
         z-index: 2;
     }
 
-    .star1,
+    .star1 {
+        width: 44px;
+        left: 27px;
+        top: 140px;
+        z-index: 3;
+    }
+
     .star2 {
+        width: 76px;
+        right: 21px;
         z-index: 3;
     }
 
@@ -265,8 +273,10 @@ body {
         transform: none;
         height: 40px;
     }
+
     .item img {
-        height: 25px; /* or whatever smaller size you want */
+        height: 25px;
+        /* or whatever smaller size you want */
         width: auto;
     }
 }

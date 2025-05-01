@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -48,11 +49,11 @@
     </section>
 
     <div class="wrapper">
-        <div class="item item1"><img src="images/brands/versace.png" alt=""></div>
-        <div class="item item2"><img src="images/brands/zara.png" alt=""></div>
-        <div class="item item3"><img src="images/brands/gucci.png" alt=""></div>
-        <div class="item item4"><img src="images/brands/prada.png" alt=""></div>
-        <div class="item item5"><img src="images/brands/calvin.png" alt=""></div>
+        <div class="item item1"><img src="images/brands/versace.png" alt="versace logo"></div>
+        <div class="item item2"><img src="images/brands/zara.png" alt="zara logo"></div>
+        <div class="item item3"><img src="images/brands/gucci.png" alt="gucci logo"></div>
+        <div class="item item4"><img src="images/brands/prada.png" alt="prada logo"></div>
+        <div class="item item5"><img src="images/brands/calvin.png" alt="calvin logo"></div>
     </div>
 
     <section class="new-arrivals">
@@ -79,12 +80,24 @@
         </div>
     </section>
 
-    <section class="top-selling">
-        <h1>OUR HAPPY CUSTOMERS</h1>
+    <section class="happy-customers">
+        <div class="swiper">
+            <div class="swiper-nav-buttons">
+                <h1>OUR HAPPY CUSTOMERS</h1>
+                <div class="nav-buttons">
+                    <div class="swiper-button-prev"><img src="images/review-buttons/prev.png" alt="prev"></div>
+                    <div class="swiper-button-next"><img src="images/review-buttons/next.png" alt="next"></div>
+                </div>
+            </div>
+            <div class="swiper-wrapper"></div>
+        </div>
     </section>
+
+    <div id="reviews"></div>
 
     <div id="footer"></div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
