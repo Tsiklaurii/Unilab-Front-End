@@ -130,3 +130,15 @@ fetch("https://680fc19727f2fdac240f48af.mockapi.io/items")
     .catch((error) => {
         console.log(error, "შეცდომა");
     });
+
+
+
+// Add Review
+document.getElementById("write-review").addEventListener("click", () => {
+    document.getElementById("add-review").style.display = "flex";
+});
+
+document.querySelector(".cancel").addEventListener("click", () => {
+    document.getElementById("add-review").style.display = "none";
+});
+
