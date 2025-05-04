@@ -1,0 +1,347 @@
+.header-divider {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 24px 100px 0px 100px;
+}
+
+.menu-path {
+    font-family: "Satoshi Variable";
+    margin: 24px 0px 24px 0px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 4px;
+    margin-left: 100px;
+}
+
+#product-details {
+    margin: 36px 100px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-photos {
+    width: 610px;
+    display: flex;
+    gap: 14px;
+}
+
+.other-images-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.other-image {
+    width: 152px;
+    height: 167px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px;
+    object-fit: cover;
+}
+
+.main-image {
+    width: 444px;
+    height: 530px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.item-info {
+    font-family: "Satoshi Variable";
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-info h2 {
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.item-info p {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.item-info h3 {
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.item-info-divider {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item-info-divider-add-cart {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.add_into_cart {
+    width: 250px;
+    height: 52px;
+    border-radius: 62px;
+    padding: 16px 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.add_into_cart img {
+    cursor: pointer;
+}
+
+.item-colors {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.sizes {
+    display: flex;
+    gap: 12px;
+}
+
+.sizes .large {
+    background-color: black;
+    color: white;
+}
+
+.sizes div {
+    border-radius: 62px;
+    padding: 12px 24px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.sizes div:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.add_into_cart {
+    display: flex;
+}
+
+.item-info button {
+    width: 100%;
+    height: 52px;
+    border-radius: 62px;
+    padding: 16px 54px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.rating_reviews {
+    margin: 80px 100px 0px 100px;
+    font-family: "Satoshi Variable";
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating_reviews1,
+.rating_reviews3 {
+    cursor: pointer;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+.rating_reviews2 {
+    cursor: pointer;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    color: black;
+    font-weight: 500;
+}
+
+.all-reviews-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.all-reviews-filter-btns {
+    display: flex;
+}
+
+.all-reviews-filter-btns div {
+    height: 48px;
+    border-radius: 62px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.all-reviews-filter-btn {
+    width: 48px;
+    background-color: #f0f0f0;
+}
+
+.latest {
+    width: 120px;
+    background-color: #f0f0f0;
+}
+
+.write-review {
+    width: 166px;
+    background-color: black;
+    color: white;
+}
+
+.all-reviews-filter h4 {
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.all-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.review {
+    width: 610px;
+    border-radius: 20px;
+    padding: 28px 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1366px) {
+    .review {
+        width: 564px;
+    }
+}
+
+.review h1 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.date {
+    margin-top: 24px;
+}
+
+.load-more {
+    display: block;
+    margin: auto;
+    width: 230px;
+    height: 52px;
+    padding: 16px 54px;
+    border-radius: 62px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: none;
+    cursor: pointer;
+}
+
+.load-more:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.also-like {
+    margin-bottom: 78px;
+}
+
+#also-like-container {
+    display: flex;
+    margin-bottom: 78px;
+    font-family: 'Satoshi Variable';
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1240px;
+    margin: auto;
+}
+
+.also-like h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 60px 0px 55px 0px;
+}
+
+.also-like-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 408px;
+    width: 295px;
+    cursor: pointer;
+}
+
+.product-image {
+    width: 100%;
+    height: 298px;
+    border-radius: 20px;
+    background-color: #F0EEED;
+}
+
+.also-like-item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 94px;
+    margin-top: 16px;
+}
+
+.also-like-item-info h4 {
+    font-size: 20px;
+}
+
+.also-like-item-info h3 {
+    font-size: 24px;
+}
+
+.ranking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}

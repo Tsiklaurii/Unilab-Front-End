@@ -1,5 +1,9 @@
 .category-page-content {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 24px 70px 0px 70px;
+}
+
+.header-divider {
+    border: 1px solid rgba(0, 0, 0, 0.1);
     margin: 24px 100px 0px 100px;
 }
 
@@ -7,6 +11,7 @@
     font-family: "Satoshi Variable";
     margin: 24px 0px 24px 0px;
     display: flex;
+    font-size: 16px;
     align-items: center;
     gap: 4px;
 }
@@ -19,9 +24,10 @@
 
 .filters {
     width: 295px;
+    height: 1290px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 20px 24px 20px 24px;
+    padding: 20px 24px;
 }
 
 .filters h3 {
@@ -49,7 +55,6 @@
     font-size: 16px;
     line-height: 100%;
     color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -58,15 +63,79 @@
 .categories {
     width: 247px;
     height: 160px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .dress-style-categories {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 124px;
 }
 
 .casual {
-    border: 1px solid black;
+    width: 925px;
+    padding-left: 10px;
+}
+
+.casual-content {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.casual-content-divider {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.pagination button {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 8px 14px;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.arrow-left,
+.arrow-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    ;
+}
+
+.pagination-nums {
+    display: flex;
+}
+
+.pagination-nums div {
+    border-radius: 8px;
+    font-size: 14px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.page1 {
+    background: rgba(0, 0, 0, 0.06);
 }
 
 .price .adjust-price {
@@ -94,7 +163,7 @@
 }
 
 .colors-first-row {
-    margin: 20px 0px;
+    margin: 20px 0px 16px 0px;
 }
 
 .size {
@@ -134,8 +203,197 @@
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.responsive-filters {
+    display: none;
+}
+
+.casual-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.casual-content-header h2 {
+    font-size: 32px;
+}
+
+#casual-content-container {
+    font-family: 'Satoshi Variable';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.casual-content-item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 94px;
+    margin-top: 16px;
+}
+
+.casual-content-item-info h4 {
+    font-size: 20px;
+}
+
+.casual-content-item-info h3 {
+    font-size: 24px;
+}
+
+.casual-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 408px;
+    width: 295px;
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+
+.casual-content-header-p {
+    display: none;
+}
+
+.filters-responsive {
+    display: none;
+}
+
+.filters-close-btn {
+    display: none;
+}
+
+@media (max-width: 1366px) {
+    .category-page-content {
+        margin: 24px 70px 0px 70px;
+    }
+}
+
 @media (max-width: 390px) {
     .category_divider {
         width: 358px;
+    }
+
+    .category-page-content {
+        margin: 15px 16px 20px 16px;
+    }
+
+    .casual-content-item-info h4 {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 170px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .casual-content-item-info h3 {
+        font-size: 20px;
+    }
+
+    .header-divider {
+        width: 358px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin: auto;
+    }
+
+    .menu-path {
+        font-size: 14px;
+    }
+
+    .casual-content-header h2 {
+        font-size: 24px;
+    }
+
+    .casual-content-header-p {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .most-popular {
+        display: none;
+    }
+
+    .filters-responsive {
+        display: flex;
+    }
+
+    .casual {
+        padding-left: 0px;
+        width: 390px;
+        padding-right: 30px;
+    }
+
+    .casual-content-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 257px;
+        width: 172px;
+        margin-bottom: 36px;
+    }
+
+    .casual-content-item:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    .pagination button {
+        font-size: 12px;
+        width: 90px;
+        padding: 0px 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pagination-nums div {
+        font-size: 12px;
+        height: 36px;
+        width: 36px;
+    }
+
+    .pagination-nums .page3,
+    .pagination-nums .page8 {
+        display: none;
+    }
+
+    .pagination {
+        margin-bottom: 40px;
+    }
+
+    .filters-close-btn {
+        display: block;
+    }
+
+    .filters-btn {
+        display: none;
+    }
+
+    .filters {
+        display: none;
+    }
+
+    .filters-divider,
+    .categories {
+        width: 100%;
+    }
+
+    .hide-casual {
+        display: none;
+    }
+
+    .filters-responsive-menue {
+        display: block;
+        width: 100%;
+        background-color: white;
+        margin-top: -60px;
+        border: none;
+    }
+
+    .colors-first-row,
+    .colors-second-row {
+        width: 100%;
     }
 }

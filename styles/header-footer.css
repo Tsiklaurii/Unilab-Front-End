@@ -269,7 +269,13 @@ footer {
 .mobile-br {
     display: none;
 }
-
+.drop-down-menu-close{
+    border: none;
+    width: 24px;
+    height: 24px;
+    background: none;
+    margin-bottom: 60px;
+}
 @media (max-width: 390px) {
     .first-order button {
         display: none;
@@ -293,14 +299,13 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 89px;
+        top: 38px;
         left: 0px;
         z-index: 5;
         background-color: white;
         padding: 24px 120px 24px 24px;
         gap: 32px;
         font-family: 'Poppins';
-        cursor: pointer;
     }
 
     .sign-up-now-button {
@@ -422,6 +427,7 @@ footer {
         padding: 20px;
         gap: 30px;
     }
+
     nav {
         display: flex;
         justify-content: space-between;

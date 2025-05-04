@@ -276,7 +276,6 @@ body {
 
     .item img {
         height: 25px;
-        /* or whatever smaller size you want */
         width: auto;
     }
 }

@@ -14,12 +14,16 @@
 <body>
     <div id="header"></div>
 
+    <div class="header-divider"></div>
+
     <section class="category-page-content">
         <div class="menu-path">Home <img src="images/filters/menu-path-arrow.png" alt="menu-path-arrow"> Casual</div>
 
         <div class="content-div">
-            <div class="filters">
-                <h3>Filters <img src="images/filters/filters.png" alt="filters"></h3>
+            <div class="filters" id="filters">
+                <h3>Filters <img src="images/filters/filters.png" alt="filters" class="filters-btn">
+                    <img src="images/drop-down-close.png" alt="filters-close-btn" class="filters-close-btn" id="filters-close-btn">
+                </h3>
                 <div class="filters-divider"></div>
                 <div class="categories">
                     <p>T-shirts <img src="images/filters/menu-path-arrow.png" alt="t-shirts-arrow"></p>
@@ -102,14 +106,42 @@
             </div>
 
             <div class="casual">
-                <h2>Casual</h2>
+                <div class="casual-content-header">
+                    <h2>Casual</h2>
+                    <p class="casual-content-header-p">Showing 1-10 of 100 Products Sort by:</p>
+                    <img src="images/filters/filters.png" alt="filters-responsive" class="filters-responsive"
+                        id="filters-responsive">
+                    <p class="most-popular">Showing 1-10 of 100 Products Sort by: <b> Most Popular <img
+                                src="images/filters/down-arrow.png" alt=""></b></p>
+                </div>
+
+                <div class="casual-content">
+                    <div id="casual-content-container"></div>
+                </div>
+
+                <div class="casual-content-divider"></div>
+
+                <div class="pagination">
+                    <button class="arrow-left"><img src="images/arrow-left.png" alt="arrow-left"> Previous</button>
+                    <div class="pagination-nums">
+                        <div class="page1">1</div>
+                        <div class="page2">2</div>
+                        <div class="page3">3</div>
+                        <div class="others">...</div>
+                        <div class="page8">8</div>
+                        <div class="page9">9</div>
+                        <div class="page10">10</div>
+                    </div>
+                    <button class="arrow-right">Next<img src="images/arrow-right.png" alt="arrow-right"></button>
+                </div>
             </div>
         </div>
     </section>
 
     <div id="footer"></div>
 
-    <script src="script.js"></script>
+    <script src="scripts/header_footer.js"></script>
+    <script src="scripts/category_page.js"></script>
 </body>
 
 </html>

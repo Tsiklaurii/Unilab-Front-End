@@ -1,33 +1,3 @@
-// header, footer
-function loadContent(id, file) {
-    fetch(file)
-        .then((res) => res.text())
-        .then((html) => {
-            document.getElementById(id).innerHTML = html;
-
-            // hide first order ad
-            if (id === "header") {
-                document.getElementById("close-first-order").addEventListener("click", function () {
-                    document.querySelector(".first-order").style.display = "none";
-                });
-            }
-
-            // burger menu
-            if (id === "header") {
-                const burger = document.getElementById('burger');
-                const menu = document.getElementById('drop-down-menu');
-
-                burger.addEventListener('click', function () {
-                    menu.classList.toggle("active")
-                })
-            }
-        });
-}
-
-loadContent("header", "header.html");
-loadContent("footer", "footer.html");
-
-
 // Top Selling, New Arrivals
 fetch("https://680fc19727f2fdac240f48af.mockapi.io/items")
     .then((res) => res.json())
@@ -67,8 +37,8 @@ fetch("https://680fc19727f2fdac240f48af.mockapi.io/items")
     });
 
 
-// Review swiper slides
-fetch('https://680fc19727f2fdac240f48af.mockapi.io/feedback') 
+// Reviews, swiper slides
+fetch('https://680fc19727f2fdac240f48af.mockapi.io/feedback')
     .then(res => res.json())
     .then(reviews => {
         const wrapper = document.querySelector('.swiper-wrapper');

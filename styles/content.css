@@ -43,6 +43,11 @@
     width: 295px;
 }
 
+.new-arrivals-item img,
+.top-selling-item img {
+    object-fit: cover;
+}
+
 .new-arrivals-item-info,
 .top-selling-item-info {
     display: flex;
@@ -133,7 +138,6 @@ body {
 }
 
 .swiper {
-    /* width: 100%; */
     width: 1239px;
     margin: 0px auto 80px auto;
 }
