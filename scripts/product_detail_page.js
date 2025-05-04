@@ -83,10 +83,12 @@ document.addEventListener("DOMContentLoaded", () => {
 // All Reviews
 fetch("https://680fc19727f2fdac240f48af.mockapi.io/feedback")
     .then((res) => res.json())
-    .then((CustomersReviews) => {
+    .then((customersReviews) => {
         const allReviews = document.getElementById("all-reviews");
 
-        CustomersReviews.forEach((reviews) => {
+        const reviewsOnScreen = customersReviews.slice(0, 6);
+
+        reviewsOnScreen.forEach((reviews) => {
             allReviews.innerHTML += `
             <div class="review">
                 <div class="more">

@@ -345,3 +345,159 @@
     justify-content: center;
     gap: 13px;
 }
+
+@media (max-width: 390px) {
+    .product-details-content {
+        margin: 15px 16px 20px 16px;
+    }
+
+    .header-divider {
+        width: 358px;
+        margin: auto;
+    }
+
+    .menu-path {
+        font-size: 14px;
+        margin: 24px 0px 24px 0px;
+    }
+
+    #product-details {
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    .item-photos {
+        width: 358px;
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+
+    .main-image {
+        width: 358px;
+        height: 290px;
+    }
+
+    .other-images-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .other-image {
+        width: 111px;
+        height: 106px;
+    }
+
+    .item-info h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .item-info p {
+        margin-bottom: 12px;
+    }
+
+    .item-info h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .options {
+        width: 358px;
+    }
+
+    .item-info-divider {
+        display: block;
+    }
+
+    .item-info-divider p {
+        font-size: 14px;
+    }
+
+    .sizes div {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .sizes {
+        gap: 8px;
+    }
+
+    .rating_reviews {
+        margin: 0px;
+    }
+
+    .rating_reviews1,
+    .rating_reviews2,
+    .rating_reviews3 {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .all-reviews-filter h4 {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .all-reviews-filter-btns .latest {
+        display: none;
+    }
+
+    .all-reviews-filter {
+        align-items: center;
+    }
+
+    .review:nth-of-type(n+4) {
+        display: none;
+    }
+
+    .more {
+        margin-bottom: 12px;
+    }
+
+    .review {
+        padding: 24px 24px;
+    }
+
+    .review h1 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .review p {
+        font-size: 14px;
+    }
+
+    .all-reviews {
+        margin-bottom: 20px;
+    }
+
+    .load-more {
+        width: 195px;
+        height: 47px;
+        padding: 14px 36px;
+    }
+
+    .also-like h1 {
+        font-size: 32px;
+    }
+
+    #also-like-container {
+        justify-content: center;
+        margin-bottom: 50px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .also-like-item:nth-of-type(n+2) {
+        display: none;
+    }
+}
